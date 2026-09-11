@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header: Jam & Greeting -->
+    <header class="card greeting-card">
+      <h1 id="clock">00:00:00</h1>
+      <p id="date-str">Senin, 1 Januari 2026</p>
+      <h2 id="greeting-text">Selamat Pagi</h2>
+      <input type="text" id="user-name-input" placeholder="Masukkan namamu..." />
+    </header>
+
+    <!-- Main Content -->
+    <main class="grid-layout">
+      <!-- Focus Timer -->
+      <section class="card">
+        <h3>Focus Timer</h3>
+        <div id="timer-display" class="timer">25:00</div>
+        <div class="button-group">
+          <button id="btn-start">Start</button>
+          <button id="btn-stop">Stop</button>
+          <button id="btn-reset">Reset</button>
+        </div>
+      </section>
+
+      <!-- To-Do List -->
+      <section class="card">
+        <h3>To-Do List</h3>
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Tambah tugas baru..." required />
+          <button type="submit">Tambah</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+
+      <!-- Quick Links -->
+      <section class="card">
+        <h3>Quick Links</h3>
+        <div class="links-grid">
+          <a href="https://google.com" target="_blank"><button>Google</button></a>
+          <a href="https://github.com" target="_blank"><button>GitHub</button></a>
+          <a href="https://youtube.com" target="_blank"><button>YouTube</button></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Theme Toggle -->
+    <button id="btn-theme" class="theme-toggle">🌙 Mode Gelap</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
